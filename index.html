@@ -9,32 +9,34 @@
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <style>
-      .head-headline {
-        padding: 0 0 80px;
-        text-align: center;
-      }
-      .head-logo {
-        font: 900 90px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
-        letter-spacing: -2px;
-        margin: 10px 0;
-      }
-      .head-logo .logo {
-        background: url(images/laplatarb.png) center 0 no-repeat;
-        height: 230px;
-        margin: 0 auto 26px;
-        overflow: hidden;
-        text-indent: -9999em;
-        width: 236px;
-      }
-      .head-logo small {
-        color: rgba(52, 73, 94, 0.30000000000000004);
-        display: block;
-        font-size: 22px;
-        font-weight: 700;
-        letter-spacing: 0;
-        padding-top: 5px;
-      }
-      .palette a { color: #fff; }
+     .head-headline {
+       padding: 0 0 80px;
+       text-align: center;
+     }
+     .head-logo {
+       font: 900 90px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
+       letter-spacing: -2px;
+       margin: 10px 0;
+     }
+     .head-logo .logo {
+       background: url(images/laplatarb.png) center 0 no-repeat;
+       height: 230px;
+       margin: 0 auto 26px;
+       overflow: hidden;
+       text-indent: -9999em;
+       width: 236px;
+     }
+     .head-logo small {
+       color: rgba(52, 73, 94, 0.30000000000000004);
+       display: block;
+       font-size: 22px;
+       font-weight: 700;
+       letter-spacing: 0;
+       padding-top: 5px;
+     }
+     .palette a { color: #fff; }
+     .spaced-row { margin-bottom: 20px; }
+     .spaced-col { margin-bottom: 20px; }
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
@@ -53,8 +55,14 @@
         </h1>
       </div>
 
-      <div class="row">
-        <div class="col-lg-3">
+      <div class="row spaced-row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <button class="btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#form">Próximo meetup</button>
+        </div>
+      </div>
+
+      <div class="row spaced-row">
+        <div class="col-lg-3 col-md-6 spaced-col">
           <h3 class="palette palette-emerald">Mailing List</h3>
           <dl class="palette palette-nephritis">
             <dt><a href="https://groups.google.com/forum/#!forum/laplatarb" target="blank">laplatarb</a></dt>
@@ -62,7 +70,7 @@
           </dl>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6 spaced-col">
           <h3 class="palette palette-peter-river">Twitter</h3>
           <dl class="palette palette-belize-hole">
             <dt><a href="https://twitter.com/laplatarb" target="blank">@laplatarb</a></dt>
@@ -70,7 +78,9 @@
           </dl>
         </div>
 
-        <div class="col-lg-3">
+        <div class="clearfix visible-md"></div>
+
+        <div class="col-lg-3 col-md-6 spaced-col">
           <h3 class="palette palette-amethyst">Canal de IRC</h3>
           <dl class="palette palette-wisteria">
             <dt>#laplatarb en <a href="http://freenode.net" target="blank">freenode.net</a></dt>
@@ -78,12 +88,26 @@
           </dl>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-3 col-md-6 spaced-col">
           <h3 class="palette palette-alizarin">GitHub</h3>
           <dl class="palette palette-pomegranate">
             <dt><a href="https://github.com/laplatarb" target="blank">laplatarb</a></dt>
-            <dd>Acá deberíamos publicar los slides de nuestras charlas. ¡Algún día lo haremos!</dd>
+            <dd>Acá publicaremos los slides de las charlas y eventualmente código que se quiera compartir</dd>
           </dl>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="Formulario de inscripción" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel">Anotate para asistir al próximo meetup!</h4>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://docs.google.com/forms/d/1lrMcvcCDKy7sQEpFLkrDuL5kYnpnjhAhQTeYpvDcT-s/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+          </div>
         </div>
       </div>
     </div>
