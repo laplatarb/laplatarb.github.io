@@ -58,7 +58,7 @@
 
       <div class="row spaced-row">
         <div class="col-lg-6 col-lg-offset-3">
-          <button class="btn btn-block btn-lg btn-primary" data-toggle="modal" data-target="#form">Próxima Meetup!</button>
+          <a class="btn btn-block btn-lg btn-primary" href="/flyer.html">Próxima Meetup!</a>
         </div>
       </div>
 
@@ -99,6 +99,9 @@
       </div>
     </div>
 
+    <!-- Este modal no lo estamos usando. Agregar:
+    data-target="#form" data-toggle="modal"
+    al boton de próxima meetup si lo quieren usar -->
     <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="Formulario de inscripción" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -107,7 +110,7 @@
             <h4 class="modal-title" id="myModalLabel">Próxima meetup!</h4>
           </div>
           <div class="modal-body no-vpadding">
-            <iframe id="meetup_form" src="https://docs.google.com/forms/d/1YZgabATepryLvqruPYDQkskwJP0DfKe5B4GNLS92xmk/viewform?embedded=true" width="878" height="500" frameborder="0" marginheight="0" marginwidth="0">Cargando...</iframe>
+            <img src="images/flyer-2015-09.png">
           </div>
         </div>
       </div>
