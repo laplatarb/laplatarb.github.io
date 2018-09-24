@@ -1,3 +1,3 @@
 # laplatarb.github.io
 
-This repo contains la_plata.rb website and documentation sources published at http://laplatarb.com/.
+Public site of Ruby users group from La plata, Argentina: https://laplatarb.github.io
