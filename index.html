@@ -9,14 +9,17 @@
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
     <style>
+     .body {
+       font-size: 16px;
+     }
      .head-headline {
-       padding: 0 0 80px;
+       padding: 0 0 40px;
        text-align: center;
      }
      .head-logo {
-       font: 900 90px/100px "Helvetica Neue", Helvetica, Arial, sans-serif;
-       letter-spacing: -2px;
+       font: "Helvetica Neue", Helvetica, Arial, sans-serif;
        margin: 10px 0;
+       font-size: 5rem;
      }
      .head-logo .logo {
        background: url(images/laplatarb.png) center 0 no-repeat;
@@ -29,8 +32,8 @@
      .head-logo small {
        color: rgba(52, 73, 94, 0.30000000000000004);
        display: block;
-       font-size: 22px;
-       font-weight: 700;
+       font-size: 2rem;
+       font-weight: 500;
        letter-spacing: 0;
        padding-top: 5px;
      }
@@ -38,13 +41,31 @@
      .spaced-row { margin-bottom: 20px; }
      .spaced-col { margin-bottom: 20px; }
      .no-vpadding { padding-top: 0px; padding-bottom: 0px; }
+
+     .card {
+       margin-bottom: 3rem;
+     }
+
+     .card .text {
+       color: rgb(52, 73, 94);
+       font-size: 1.7rem;
+       padding: 0px 3rem;
+     }
+
+     .card .logo {
+       height: 64px;
+     }
+
+     .card .link {
+       cursor: pointer;
+     }
     </style>
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
   </head>
   <body>
     <div class="container">
@@ -57,51 +78,43 @@
       </div>
 
       <div class="row spaced-row">
-        <div class="col-lg-6 col-lg-offset-3">
-          <a class="btn btn-block btn-lg btn-primary disabled" href="./flyer.html"> Próxima Meetup! <small> ya vendrá </small></a>
+        <div class="col-md-6 card">
+          <a href="https://laplatarb.herokuapp.com/"><img class="logo" src="/images/slack.svg">Entrá al slack!</a>
+          <div class="text">
+            Acá charlamos sobre novedades, problemas que nos cruzamos, organizamos las reuniones del grupo, y posteamos ofertas de trabajo que nos llegan
+          </div>
         </div>
-      </div>
+        <div class="col-md-6 card">
+          <a href="/flyer.html"><img class="logo" src="/images/laplatarb-small.png">Próxima meetup!</a>
+          <div class="text">
+            Si tenés algo para compartir, una charla para dar, algo para mostrar, o te gustaría que se trate algún tema en particular en la próxima reunion, contanos por <a class="link" href="https://laplatarb.herokuapp.com/"> slack </a> o <a class="link" data-target="#modal" data-toggle="modal"> escribinos! </a>
+          </div>
+        </div>
 
-      <div class="row spaced-row">
-
-        <div class="col-lg-3 col-lg-offset-3 col-md-6 spaced-col">
-          <h3 class="palette palette-amethyst"><a href="https://laplatarb.slack.com/messages">Slack </a></h3>
-          <dl class="palette palette-wisteria">
-            <dt><a href="https://laplatarb.herokuapp.com/" target="blank">laplatarb</a></dt>
-            <dd><a href="https://laplatarb.herokuapp.com/" target="blank"> Acá nos juntamos a charlar (no siempre de ruby) </a></dd>
-            <dt>
-              <br>
-              <br>
-              <a href="https://laplatarb.herokuapp.com/" target="blank"> Invitate acá!</a></dt>
-          </dl>
-        </div>
-        
-        <div class="col-lg-3 col-md-6 spaced-col">
-          <h3 class="palette palette-peter-river"><a href="https://github.com/laplatarb" target="blank">GitHub</a></h3>
-          <dl class="palette palette-belize-hole">
-            <dt><a href="https://github.com/laplatarb" target="blank">laplatarb</a></dt>
-            <dd><a href="https://github.com/laplatarb" target="blank">Acá organizamos las reuniones, publicamos los slides de las charlas y código que se quiera compartir</a>.
-              <br>
-              <br>
-              <a href="https://github.com/laplatarb/issues" target="blank" class="text-bold"> <span  style="font-weight: bold"> Issues </span> está abierto para proponer temas! </a> </dd>
-          </dl>
-        </div>
-        <div class="clearfix visible-md"></div>
       </div>
     </div>
 
-    <!-- Este modal no lo estamos usando. Agregar:
-    data-target="#form" data-toggle="modal"
-    al boton de próxima meetup si lo quieren usar -->
-    <div class="modal fade" id="form" tabindex="-1" role="dialog" aria-labelledby="Formulario de inscripción" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="propuestas para próxima meetup" aria-hidden="true">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             <h4 class="modal-title" id="myModalLabel">Próxima meetup!</h4>
           </div>
-          <div class="modal-body no-vpadding">
-            <img src="images/flyer-2015-09.png">
+          <div class="modal-body">
+
+            <form class="form" id="proposal-form" action="/">
+              <div class="form-group">
+                <label> email </label>
+                <input id="email"  name="email" type="text" class="form-control">
+              </div>
+              <div class="form-group">
+                <label> Contanos tu propuesta </label>
+                <textarea id="proposal" name="proposal" class="form-control"></textarea>
+              </div>
+              <input type="submit" value="Enviar" class="btn btn-primary">
+            </form>
+
           </div>
         </div>
       </div>
@@ -118,13 +131,24 @@
     <script src="js/jquery.tagsinput.js"></script>
     <script src="js/jquery.placeholder.js"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-51303614-1', 'laplatarb.com');
-      ga('send', 'pageview');
+     var url = 'https://hooks.slack.com/services/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'
+     $('#proposal-form').on('submit', function(e) {
+       e.preventDefault()
+       var payload = {
+         text: $('#proposal-form #proposal').val(),
+         username: $("#proposal-form #email").val(),
+         icon_url: 'http://laplatarb.github.io/images/laplatarb-small.png',
+         channel: 'meetup'
+       }
+       $.ajax({
+         type: "POST",
+         url: url,
+         data: JSON.stringify(payload),
+         success: function() { console.log("sent")},
+         dataType: 'application/json'
+       });
+       $('#modal').modal('hide')
+     });
     </script>
   </body>
 </html>
