@@ -67,6 +67,11 @@
         border-radius: 5px;
         padding: 10px 5px;
         font-family: monospace;
+        margin-bottom: 15px;
+      }
+      .terminal iframe {
+        width: 90%;
+        height:  1000px;
       }
       .terminal .light {
         color:  #708284;
@@ -76,6 +81,12 @@
       }
       .terminal .red a {
         color: #D11C24;
+      }
+      .terminal .green {
+        color: #A3D304;
+      }
+      .terminal .white {
+        color: white;
       }
       .terminal p {
         margin: 0;
@@ -100,20 +111,24 @@
       </div>
 
       <div class="terminal">
-        <p><span class="light">irb(main):001:0></span> fecha?</p>
+        <p><span class="light">irb(main):001:0></span> meetup = Meetup.new </p>
+        <p><span class="light">=></span> <span class="green">#&#60;Meetup:0x00007fa761381548 ...&#62;</span></p>
+        <p><span class="light">irb(main):002:0></span> meetup.fecha</p>
         <p><span class="light">=></span> <span class="red"><a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NzZsajRvbmY1b2g5YzFpbnFrMTFuZzd2cXUga3BqY3FkN2VmbnRnNjN0djN0cXVoaHZyZnNAZw&amp;tmsrc=kpjcqd7efntg63tv3tquhhvrfs%40group.calendar.google.com">"jueves 4 de julio, 2019"</a></span></p>
-        <p><span class="light">irb(main):002:0></span> lugar?</p>
+        <p><span class="light">irb(main):003:0></span> meetup.hora</p>
+        <p><span class="light">=></span> <span class="red"><a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NzZsajRvbmY1b2g5YzFpbnFrMTFuZzd2cXUga3BqY3FkN2VmbnRnNjN0djN0cXVoaHZyZnNAZw&amp;tmsrc=kpjcqd7efntg63tv3tquhhvrfs%40group.calendar.google.com">18:30..20:30</a></span></p>
+        <p><span class="light">irb(main):004:0></span> meetup.lugar</p>
         <p><span class="light">=></span> <span class="red"><a target="_blank" href="https://goo.gl/maps/jmt7VjUXc2moCpru6">Snappler</a></span></p>
-        <p><span class="light">irb(main):003:0></span> costo?</p>
-        <p><span class="light">=></span> <span class="white">nil</span></p>
-        <p><span class="light">irb(main):004:0></span> registrame!</p>
+        <p><span class="light">irb(main):005:0></span> meetup.costo_de_entrada</p>
+        <p><span class="light">=></span> <span class="green">#&#60;Money <span class="white">0.00</span> currency:ARS&#62;</span></p>
+        <p><span class="light">irb(main):006:0></span> meetup.registrame!</p>
         <p><span class="light">=></span> <span class="red">"Tu asistencia cuenta! Ayudanos a definir las charlas:"</span></p>
-        <p><span class="light">=></span> <span id="cursor">_</span></p>
+        <p><span class="light">=></span> </p>
         <div class="iframe-container">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMfPpJ8PDbWErm-Xs1od30aO61dz48V1u53CAXp2YsSyKK0g/viewform?embedded=true" width="640" height="1040" frameborder="0" marginheight="0" marginwidth="0">puts "cargando..."</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdMfPpJ8PDbWErm-Xs1od30aO61dz48V1u53CAXp2YsSyKK0g/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">puts "cargando..."</iframe>
         </div>
+        <p><span class="light">irb(main):007:0></span> <span id="cursor">_</span></p>
       </div>
-
     </div>
 
     <script src="js/bootstrap.min.js"></script>
