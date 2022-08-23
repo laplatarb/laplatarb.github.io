@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>la_plata.rb</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/flat-ui.css" rel="stylesheet">
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <style>
+      .body {
+       font-size: 16px;
+      }
+      .head-headline {
+       padding: 0 0 40px;
+       text-align: center;
+      }
+      .head-logo {
+       font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+       margin: 10px 0;
+       font-size: 5rem;
+      }
+      .head-logo .logo {
+       background: url(images/laplatarb.png) center 0 no-repeat;
+       height: 230px;
+       margin: 0 auto 26px;
+       overflow: hidden;
+       text-indent: -9999em;
+       width: 236px;
+      }
+      .head-logo small {
+       color: rgba(52, 73, 94, 0.30000000000000004);
+       display: block;
+       font-size: 2rem;
+       font-weight: 500;
+       letter-spacing: 0;
+       padding-top: 5px;
+      }
+      .spaced-row { margin-bottom: 20px; }
+      .spaced-col { margin-bottom: 20px; }
+      .no-vpadding { padding-top: 0px; padding-bottom: 0px; }
+
+      .card {
+       margin-bottom: 3rem;
+      }
+
+      .card .text {
+       color: rgb(52, 73, 94);
+       font-size: 1.7rem;
+       padding: 0px 3rem;
+      }
+
+      .card .logo {
+       height: 64px;
+      }
+
+      .iframe-container {
+      width: 100%;
+      text-align: center;
+      }
+
+      .terminal {
+        background: #022029;
+        box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2);
+        color: #eee8d5;
+        border-radius: 5px;
+        padding: 10px 5px;
+        font-family: monospace;
+        margin-bottom: 15px;
+      }
+      .terminal iframe {
+        width: 90%;
+        height:  1000px;
+      }
+      .terminal .light {
+        color:  #708284;
+      }
+      .terminal .red {
+        color: #D11C24;
+      }
+      .terminal .red a {
+        color: #D11C24;
+      }
+      .terminal .green {
+        color: #A3D304;
+      }
+      .terminal .white {
+        color: white;
+      }
+      .terminal p {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+         <script src="js/html5shiv.js"></script>
+         <script src="js/respond.min.js"></script>
+         <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="head-headline">
+        <h1 class="head-logo">
+          <div class="logo"></div>
+          la_plata.rb
+          <small>Grupo de usuarios de Ruby de La Plata, Argentina.</small>
+        </h1>
+      </div>
+
+      <div class="terminal">
+        <p><span class="light">irb(main):001:0></span> meetup = Meetup.new </p>
+        <p><span class="light">=></span> <span class="green">#&#60;Meetup:0x00007fa761381548 ...&#62;</span></p>
+        <p><span class="light">irb(main):002:0></span> meetup.fecha</p>
+        <p><span class="light">=></span> <span class="red">"Jueves 15 de Septiembre, 2022"</span></p>
+        <p><span class="light">irb(main):003:0></span> meetup.hora</p>
+        <p><span class="light">=></span> <span class="red">18:30..20:30</span></p>
+        <p><span class="light">irb(main):004:0></span> meetup.lugar.nombre</p>
+        <p><span class="light">=></span> <span class="red"><a target="_blank" href="https://goo.gl/maps/jmt7VjUXc2moCpru6">Snappler</a></span></p>
+        <p><span class="light">irb(main):004:0></span> meetup.lugar.direccion</p>
+        <p><span class="light">=></span> <span class="red"><a target="_blank" href="https://goo.gl/maps/jmt7VjUXc2moCpru6">"Calle 2 #786, Entre 47 y 48"</a></span></p>
+        <p><span class="light">irb(main):005:0></span> meetup.costo_de_entrada</p>
+        <p><span class="light">=></span> <span class="green">#&#60;Money <span class="white">0.00</span> currency:ARS&#62;</span></p>
+        <p><span class="light">irb(main):006:0></span> meetup.registrame!</p>
+        <p><span class="light">=></span> <span class="red">"Tu asistencia cuenta! Ayudanos a definir las charlas:"</span></p>
+        <p><span class="light">=></span> </p>
+        <div class="iframe-container">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckgmqht9rOIBjYHjffNsrq1iubqxHW3fDPoSxnSLFh_aAV8g/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">puts "cargando..."</iframe>
+        </div>
+        <p><span class="light">irb(main):007:0></span> <span id="cursor">_</span></p>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/bootstrap-switch.js"></script>
+    <script>
+      var cursor = document.querySelector('#cursor');
+      setInterval(function() {
+        cursor.innerText = cursor.innerText ? '' : '_';
+      }, 300);
+    </script>
+  </body>
+</html>
