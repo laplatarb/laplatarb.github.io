@@ -8,6 +8,14 @@
     <link href="css/flat-ui.css" rel="stylesheet">
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
 
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/bootstrap-select.js" ></script>
+    <script src="js/bootstrap-switch.js" ></script>
+    <script src="js/opal-browser.js"></script>
+    <script src="https://cdn.opalrb.com/opal/current/opal.min.js"></script>
+    <script src="https://cdn.opalrb.com/opal/current/opal-parser.min.js" onload="Opal.load('opal-parser')"></script>
+
     <style>
       .body {
        font-size: 16px;
@@ -71,7 +79,7 @@
       }
       .terminal iframe {
         width: 90%;
-        height:  1000px;
+        height: 600px;
       }
       .terminal .light {
         color:  #708284;
@@ -91,6 +99,41 @@
       .terminal p {
         margin: 0;
         padding: 0;
+      }
+
+      #output {
+        height: 300px;
+      }
+
+      #output {
+        display: block;
+        width: 100%;
+        background: #022029;
+        color: #eee8d5;
+        padding: 10px 5px;
+        font-family: monospace;
+        border: none;
+        outline: none;
+      }
+
+      #input {
+        width: 100%;
+        background: #022029;
+        color: #eee8d5;
+        padding: 10px 5px;
+        font-family: monospace;
+        border: none;
+        outline: none;
+      }
+
+      #prompt {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .cli {
+        display: flex;
+        align-items: center;
       }
     </style>
 
@@ -129,18 +172,89 @@
         <div class="iframe-container">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckgmqht9rOIBjYHjffNsrq1iubqxHW3fDPoSxnSLFh_aAV8g/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">puts "cargando..."</iframe>
         </div>
-        <p><span class="light">irb(main):007:0></span> <span id="cursor">_</span></p>
+        <textarea id="output"></textarea>
+        <div class="cli">
+          <span id="prompt" class="light">irb(main):000:0></span>
+          <input id="input" value='4.times { say "Meetup! } # DO NOT PRESS ENTER'></input>
+        </div>
       </div>
     </div>
 
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/bootstrap-select.js"></script>
-    <script src="js/bootstrap-switch.js"></script>
-    <script>
-      var cursor = document.querySelector('#cursor');
-      setInterval(function() {
-        cursor.innerText = cursor.innerText ? '' : '_';
-      }, 300);
+    <script type="text/ruby">
+      require 'native'
+      require 'promise'
+      require 'browser/setup/full'
+
+      class CLI
+        attr_reader :input, :output, :prompt
+        private attr_accessor :line
+
+        def initialize
+          @input = $document.at_css("#input")
+          @output = $document.at_css("#output")
+          @prompt = $document.at_css("#prompt")
+          @line = 0
+        end
+
+        def start
+          input.on(:keypress) { |e| e.prevent and evaluate if e.key == "Enter" }
+          $document.ready { input.focus }
+        end
+
+        private
+
+        def evaluate
+          out "@#{prompt_text} #{input.value}"
+
+          begin
+            result = Opal.eval(input.value)
+            out "#=> #{result.inspect}"
+          rescue SyntaxError => e
+          out e.message
+            out e.backtrace
+            say "\nTold you..."
+          rescue Exception => e
+            out e.message
+            out e.backtrace
+          ensure
+            new_line
+            output.scroll.to :bottom
+          end
+        end
+
+        def new_line
+          out "\n"
+          input.value = ""
+          self.line += 1
+          update_prompt
+        end
+
+        def update_prompt
+          prompt.text = prompt_text
+        end
+
+        def prompt_text
+          "irb(main):#{line.to_s.rjust(3,"0")}:0> "
+        end
+
+        def out(string)
+          output.value = "#{output.value}\n#{string}"
+        end
+      end
+
+      COMMAND_LINE = CLI.new
+      $document.ready { COMMAND_LINE.start }
+    </script>
+
+    <script type="text/ruby">
+      def say(s)
+        COMMAND_LINE.out(s)
+        nil
+      end
+
+      def codes
+        say "secret!"
+      end
     </script>
   </body>
 </html>
