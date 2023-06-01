@@ -1,0 +1,2 @@
+web: bundle exec jekyll serve
+css: yarn run dev
