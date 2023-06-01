@@ -2,4 +2,11 @@
 layout: default
 ---
 
-{{ content }}
+<div class="md:container md:mx-auto mx-2">
+  <div><!-- author info here --></div>
+
+  <div class="prose mx-auto">
+    <h1 class="text-5xl">{{ page.title }}</h1>
+    {{ content }}
+  </div>
+</div>
