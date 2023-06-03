@@ -1,0 +1,32 @@
+  <div class="grid grid-cols-4 gap-4">
+    <div class="col-span-3"> <!-- Title and excerpt -->
+      <a href="{{ include.post.url }}" class="">
+        <h1 class="font-bold text-2xl">
+          {{ include.post.title }}
+        </h1>
+
+        <div class="text-gray-500 mt-2">
+          {{ include.post.excerpt }}
+        </div>
+      </a>
+
+      <div class="text-gray-500 mt-4">
+        <span title="{{ include.post.date | date: '%B %-d, %Y' }}">
+          {{ include.post.date | date: "%B %-d" }}
+        </span>
+
+        <span>·</span>
+
+        {% capture tag %}{{ include.post.tags[0] }}{% endcapture %}
+        {% include tag.html tag=tag %}
+      </div>
+    </div>
+
+    <div class="hidden sm:block"> <!-- Cover Image -->
+      {% if include.post.cover %}
+        <a href="{{ include.post.url }}">
+          <img src="{{ include.post.cover }}" alt="{{ include.post.title }}" class="w-52 h-32 object-cover object-center">
+        </a>
+      {% endif %}
+    </div>
+  </div>
