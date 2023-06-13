@@ -47,10 +47,12 @@ En esta charla nos vamos a tomar un recreo de lo técnico, para hablar de algo q
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SYzDWdNUrrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Slides
-- TBD
+- [Ver Online](https://docs.google.com/presentation/d/1FpyNTyNNIDNPrdeM3HzNbzlYtb4PZcgEUpowmMmMNME/edit?usp=sharing)
 
 ## Speaker
-TBD
+### Bárbara Corro
+- [LinkedIn](https://www.linkedin.com/in/b%C3%A1rbara-corro-881118219/)
+- [Github](https://github.com/barbicorro)
 
 # Mejorando la calidad de tus tests: Tips y estrategias para una mejor test suite
 
@@ -60,10 +62,12 @@ En esta charla, exploraremos cómo podemos mejorar nuestros tests de sistema uti
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fTTcTm1OJ2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Slides
-- TBD
+- [Ver Online](https://docs.google.com/presentation/d/1q6pm_UANifxViLb-r4f8aongxFlrRNmJ0100-lXq9YQ/edit?usp=sharing)
 
 ## Speaker
-TBD
+### Verónica Isoardi
+- [LinkedIn](https://www.linkedin.com/in/veronica-isoardi)
+- [Github](https://github.com/VeroIsoardi)
 
 # La comunidad ❤️
 Gracias a la gente de [Unagi](https://unagisoftware.com/) que nos ayudo capturando estos recuerdos 📸
@@ -75,6 +79,8 @@ Gracias a la gente de [Unagi](https://unagisoftware.com/) que nos ayudo capturan
 <img src="{{ site.baseurl }}/assets/images/meetup_01_06_2023/speakers.jpg" alt="speakers">
 
 # Agradecimientos
-Finalmente, agradecer a todas las personas que participaron de este increible encuentro y a todas las empresas que lo sponsorearon: [Rootstrap](https://www.rootstrap.com/), [Sinaptia](https://sinaptia.dev/), [Snappler](https://www.snappler.com/), [Unagi](https://unagisoftware.com/)
+Finalmente, agradecer a todas las personas que participaron de este increible encuentro y a todas las empresas que lo sponsorearon: [Rootstrap](https://www.rootstrap.com/), [Sinaptia](https://sinaptia.dev/), [Snappler](https://www.snappler.com/), [Unagi](https://unagisoftware.com/).
+
+Agradecimiento especial para la gente de [Rootstrap](https://www.rootstrap.com/) que se encargo del hosting del evento.
 
 Nos vemos pronto en la próxima meetup!
