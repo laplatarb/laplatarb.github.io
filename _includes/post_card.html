@@ -2,7 +2,7 @@
     <div class="hidden sm:block"> <!-- Cover Image -->
       {% if include.post.cover %}
         <a href="{{ include.post.url }}">
-          <img src="{{ site.baseurl }}/{{ include.post.cover }}" alt="{{ include.post.title }}" class="w-52 h-32 object-cover object-center">
+          <img src="{{ include.post.cover }}" alt="{{ include.post.title }}" class="w-52 h-32 object-cover object-center">
         </a>
       {% endif %}
     </div>

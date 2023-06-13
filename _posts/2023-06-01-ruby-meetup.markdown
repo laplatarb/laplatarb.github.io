@@ -4,7 +4,7 @@ title:  "Meetup de Junio, 2023"
 date:   2023-06-01 18:30:00 -0300
 categories: Meetup
 tags: Ruby Rails Meetup
-cover: assets/images/meetup_01_06_2023/birra.jpg
+cover: "https://firebasestorage.googleapis.com/v0/b/la-plata-rb.appspot.com/o/meetup_01_06_2023%2Fbirra.jpg?alt=media"
 ---
 
 Y se fue la primera meetup del año 2023! El día 1 de Junio celebramos una nueva edición de las Ruby meetups en la ciudad de La Plata.
@@ -73,11 +73,11 @@ En esta charla, exploraremos cómo podemos mejorar nuestros tests de sistema uti
 # La comunidad ❤️
 Gracias a la gente de [Unagi](https://unagisoftware.com/) que nos ayudo capturando estos recuerdos 📸
 
-<img src="{{ site.baseurl }}/assets/images/meetup_01_06_2023/birra.jpg" alt="birra">
-<img src="{{ site.baseurl }}/assets/images/meetup_01_06_2023/gente1.jpg" alt="gente1">
-<img src="{{ site.baseurl }}/assets/images/meetup_01_06_2023/gente2.jpg" alt="gente2">
-<img src="{{ site.baseurl }}/assets/images/meetup_01_06_2023/gente3.jpg" alt="gente3">
-<img src="{{ site.baseurl }}/assets/images/meetup_01_06_2023/speakers.jpg" alt="speakers">
+<img src="https://firebasestorage.googleapis.com/v0/b/la-plata-rb.appspot.com/o/meetup_01_06_2023%2Fbirra.jpg?alt=media" alt="birra">
+<img src="https://firebasestorage.googleapis.com/v0/b/la-plata-rb.appspot.com/o/meetup_01_06_2023%2Fgente1.jpg?alt=media" alt="gente1">
+<img src="https://firebasestorage.googleapis.com/v0/b/la-plata-rb.appspot.com/o/meetup_01_06_2023%2Fgente2.jpg?alt=media" alt="gente2">
+<img src="https://firebasestorage.googleapis.com/v0/b/la-plata-rb.appspot.com/o/meetup_01_06_2023%2Fgente3.jpg?alt=media" alt="gente3">
+<img src="https://firebasestorage.googleapis.com/v0/b/la-plata-rb.appspot.com/o/meetup_01_06_2023%2Fspeakers.jpg?alt=media" alt="speakers">
 
 # Agradecimientos
 Finalmente, agradecer a todas las personas que participaron de este increible encuentro y a todas las empresas que lo sponsorearon: [Rootstrap](https://www.rootstrap.com/), [Sinaptia](https://sinaptia.dev/), [Snappler](https://www.snappler.com/), [Unagi](https://unagisoftware.com/).
