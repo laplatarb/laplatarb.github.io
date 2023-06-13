@@ -4,6 +4,7 @@ title:  "Meetup de Junio, 2023"
 date:   2023-06-01 18:30:00 -0300
 categories: Meetup
 tags: Ruby Rails Meetup
+cover: assets/images/meetup_01_06_2023/birra.jpg
 ---
 
 Y se fue la primera meetup del año 2023! El día 1 de Junio celebramos una nueva edición de las Ruby meetups en la ciudad de La Plata.
