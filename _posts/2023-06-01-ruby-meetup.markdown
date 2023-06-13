@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Meetup 01-06-2023"
+title:  "Meetup de Junio, 2023"
 date:   2023-06-01 18:30:00 -0300
 categories: Meetup
 tags: Ruby Rails Meetup
