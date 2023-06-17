@@ -1,0 +1,44 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  {% seo title=false %}
+
+  <title>
+      {% if page.tag or page.title %}
+        {% if page.tag %}
+          {{ page.tag | escape }}
+        {% else %}
+          {{ page.title | escape }}
+        {% endif %}
+        -
+      {% endif %}
+      {% if paginator and paginator.page and paginator.total_pages > 1 and paginator.page > 1 %}
+        Page {{ paginator.page }} of {{ paginator.total_pages }} -
+      {% endif %}
+      {{ site.title | escape }}
+      {% unless page.tag or page.title %}
+        - {{ site.description | escape }}
+      {% endunless %}
+    </title>
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/main.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/assets/images/laplatarb-small.png">
+  <link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/images/laplatarb-small.png">
+  <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/laplatarb-small.png">
+  <link rel="manifest" href="{{ site.baseurl }}/assets/site.webmanifest">
+  <link rel="alternate" type="application/feed+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml">
+  <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
+
+  {% if jekyll.environment == "production" && site.env.GOOGLE_TAG_ID %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.env.GOOGLE_TAG_ID }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ site.env.GOOGLE_TAG_ID }}');
+    </script>
+  {% endif %}
+</head>

@@ -1,0 +1,21 @@
+{
+  "name": "laplata.rb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "dev": "postcss -w main.css -o _site/assets/main.css",
+    "build": "postcss main.css -o _site/assets/main.css"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
+    "tailwindcss": "^3.3.2"
+  },
+  "devDependencies": {
+    "postcss-cli": "^10.1.0"
+  }
+}
