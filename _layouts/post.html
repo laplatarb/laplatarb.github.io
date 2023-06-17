@@ -3,10 +3,17 @@ layout: default
 ---
 
 <div class="md:container md:mx-auto mx-2">
-  <div><!-- author info here --></div>
+  <div class="mx-auto max-w-[65ch]">
+    <div class="prose">
+      <h1 class="text-5xl">{{ page.title }}</h1>
+    </div>
 
-  <div class="prose mx-auto">
-    <h1 class="text-5xl">{{ page.title }}</h1>
-    {{ content }}
+    <div class="my-8">
+      {% include post_summary.html post=page %}
+    </div>
+
+    <div class="prose border-t-2 border-gray-100 pt-8">
+      {{ content }}
+    </div>
   </div>
 </div>
