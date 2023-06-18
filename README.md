@@ -37,6 +37,19 @@ author: laplatarb
 # ...
 ```
 
+## Tags
+
+Los tags de un post permiten poder agrupar posts por cada tag.
+
+Los tags deben definirse como un arreglo de strings.
+
+En el post, usar la clave `tags`:
+```yaml
+---
+layout: post
+tags: [ruby, rails, "modular-monoliths"]
+```
+
 ## Writing posts
 
 1. Use not-prose when adding code snippets:
