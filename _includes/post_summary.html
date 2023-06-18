@@ -29,7 +29,8 @@
     </h1>
 
     <div class="text-gray-500">
-      <!-- Insertar read time acá -->
+      {{ include.post.read_time_in_minutes }} min de lectura
+      <span>·</span>
       {{ include.post.date | date: "%B %-d, %Y" }}
     </div>
   </div>
