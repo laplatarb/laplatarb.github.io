@@ -8,6 +8,35 @@ First build jekyll `bundle exec jekyll build` then build the stylesheet `yarn ru
 
 Run `./dev` to start jekyll and tailwind processes.
 
+# Contenido
+
+## Cómo agregar autores?
+
+Actualizar el `_data/authors.yml`
+
+```yaml
+laplatarb:
+  first_name: laplata.rb
+  last_name:
+  description: Meet ups and organizational posts.
+  github: laplatarb
+```
+
+- La clave—en el ejemplo anterior `laplatarb`—es el identificador del autor
+- `first_name` nombre de la persona
+- `last_name` apellido de la persona
+- `description` (opcional) describe brevemente el perfil del autor
+- `github` debe contener el nombre de usuario de la persona en github. Si `avatar` no está presente, se usa el avatar del usuario en github
+- `avatar` puede contener una URL completa (por ejemplo: https://example.com/profile.png) o un path relativo al sitio (en caso de querer usar una imagen local)
+
+En el post, usar la clave `author`:
+
+```yaml
+layout: post
+author: laplatarb
+# ...
+```
+
 ## Writing posts
 
 1. Use not-prose when adding code snippets:

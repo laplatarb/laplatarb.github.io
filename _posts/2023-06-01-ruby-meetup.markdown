@@ -5,6 +5,7 @@ date:   2023-06-01 18:30:00 -0300
 categories: Meetup
 tags: Ruby Rails Meetup
 cover: "https://firebasestorage.googleapis.com/v0/b/la-plata-rb.appspot.com/o/meetup_01_06_2023%2Fbirra.jpg?alt=media"
+author: julian_pasquale
 ---
 
 Y se fue la primera meetup del año 2023! El día 1 de Junio celebramos una nueva edición de las Ruby meetups en la ciudad de La Plata.

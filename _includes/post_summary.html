@@ -1,0 +1,36 @@
+{%- if include.post.author -%}
+  {% assign author = site.data.authors[include.post.author] %}
+{%- else -%}
+  {% assign author = site.data.authors["laplatarb"]  %}
+{%- endif -%}
+
+<div class="flex flex-row">
+  <div>
+    {%- if author.avatar -%}
+      {%- capture avatar_url -%}
+        {% if author.avatar contains 'https://' %}
+          {{ author.avatar }}
+        {% else %}
+          {{ site.baseurl }}{{ author.avatar }}
+        {% endif %}
+      {%- endcapture -%}
+    {%- else -%}
+      {%- capture avatar_url -%}
+        https://github.com/{{ author.github }}.png?size=96
+      {%- endcapture -%}
+    {%- endif -%}
+
+    <img src="{{ avatar_url }}" alt="{{ author.first_name }} {{ author.last_name }}" class="rounded-full w-12 h-12">
+  </div>
+
+  <div class="ml-3 flex flex-col justify-center">
+    <h1 class="" title="{{ author.description }}">
+      {{ author.first_name }} {{ author.last_name }}
+    </h1>
+
+    <div class="text-gray-500">
+      <!-- Insertar read time acá -->
+      {{ include.post.date | date: "%B %-d, %Y" }}
+    </div>
+  </div>
+</div>
