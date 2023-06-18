@@ -1,4 +1,8 @@
-{% assign author = site.data.authors[include.post.author] %}
+{%- if include.post.author -%}
+  {% assign author = site.data.authors[include.post.author] %}
+{%- else -%}
+  {% assign author = site.data.authors["laplatarb"]  %}
+{%- endif -%}
 
 <div class="flex flex-row">
   <div>
