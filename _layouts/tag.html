@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+{% assign posts = site.tags[page.tag] %}
+
+<div class="md:container md:mx-auto mx-6 mt-6">
+  <h1 class="text-5xl font-extrabold mb-10">#{{ page.tag }}</h1>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-12 md:gap-28">
+    {% for post in posts %}
+      {% include post_card.html post=post %}
+    {% endfor %}
+  </div>
+</div>

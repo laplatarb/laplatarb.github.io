@@ -3,7 +3,7 @@ layout: post
 title:  "Meetup de Junio, 2023"
 date:   2023-06-01 18:30:00 -0300
 categories: Meetup
-tags: Ruby Rails Meetup
+tags: [meetup, modular, feedback, testing]
 cover: "https://firebasestorage.googleapis.com/v0/b/la-plata-rb.appspot.com/o/meetup_01_06_2023%2Fbirra.jpg?alt=media"
 author: julian_pasquale
 ---
