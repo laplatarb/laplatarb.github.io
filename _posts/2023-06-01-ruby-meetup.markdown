@@ -31,7 +31,7 @@ Aunque término "microservicios" se ha hecho bastante popular estos ultimos año
 El objetivo de esta charla es introducir las definiciones de monolito modular, DDD, hablar sobre el estado actual de este paradigma en la comunidad Rails (Packwerk vs Engines) y además contar mi experiencia aplicando esto en el proyecto para el que estoy trabajando. PD: No es una charla de microservicios 😜
 
 ## Recording
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5hQvd9HQbcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5hQvd9HQbcw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full"></iframe>
 
 ## Slides
 - [Ver Online](https://julianpasquale.github.io/modular-monoliths-talk/)
@@ -46,7 +46,7 @@ El objetivo de esta charla es introducir las definiciones de monolito modular, D
 En esta charla nos vamos a tomar un recreo de lo técnico, para hablar de algo que nos atraviesa a todes, dentro y fuera de lo laboral: el feedback. ¿Por qué es importante dar feedback?¿Cuándo hay que darlo?¿Y cómo?¿Existe el feedback positivo y negativo? son algunas de las preguntas que vamos a responder 😊.
 
 ## Recording
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SYzDWdNUrrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SYzDWdNUrrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full"></iframe>
 
 ## Slides
 - [Ver Online](https://docs.google.com/presentation/d/1FpyNTyNNIDNPrdeM3HzNbzlYtb4PZcgEUpowmMmMNME/edit?usp=sharing)
@@ -61,7 +61,7 @@ En esta charla nos vamos a tomar un recreo de lo técnico, para hablar de algo q
 En esta charla, exploraremos cómo podemos mejorar nuestros tests de sistema utilizando Rspec y aplicando principios de BDD y gherkin para hacerlos más legibles y eficientes. También veremos cómo mejorar los tests de unidad haciendo uso de distintos tipos de test doubles para simular comportamientos en nuestros tests y cómo esto puede mejorar la calidad de nuestro código y reducir la complejidad de los tests.
 
 ## Recording
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fTTcTm1OJ2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fTTcTm1OJ2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full"></iframe>
 
 ## Slides
 - [Ver Online](https://docs.google.com/presentation/d/1q6pm_UANifxViLb-r4f8aongxFlrRNmJ0100-lXq9YQ/edit?usp=sharing)

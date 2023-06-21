@@ -19,6 +19,12 @@
       </a>
 
       <div class="text-gray-500 mt-4">
+        <span>
+          {{ include.post.read_time_in_minutes }} min de lectura
+        </span>
+
+        <span>·</span>
+
         <span title="{{ include.post.date | date: '%B %-d, %Y' }}">
           {{ include.post.date | date: "%B %-d" }}
         </span>
