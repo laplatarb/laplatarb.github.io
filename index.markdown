@@ -9,6 +9,16 @@ layout: default
   <div class="text-center">
     <h1 class="text-2xl md:text-7xl text-gray-700 font-mono">{{ site.title }}</h1>
     <p class="text-gray-500 mt-4">{{ site.description }}</p>
+    <p class="text-gray-500 mt-4">
+      🎥 Mira los recordings de las charlas en nuestro 
+      <a class="font-medium text-red-600 dark:text-red-500 hover:underline" href="{{ site.youtube_channel_url }}" target="_blank" rel="noopener">canal de Youtube</a>
+      🎥
+    </p>
+    <p class="text-gray-500 mt-4">
+      💌 Unite a nuestra 
+      <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="{{ site.mailing_list_sing_up_form }}" target="_blank" rel="noopener">mailing list</a>
+      para enterarte de los próximos eventos! 💌
+    </p>
   </div>
 </div>
 
