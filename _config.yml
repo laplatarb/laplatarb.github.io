@@ -29,6 +29,9 @@ github_url: https://github.com/laplatarb/laplatarb.github.io
 twitter_username:
 github_username: laplatarb
 
+youtube_channel_url: https://www.youtube.com/@la_plata_ruby/playlists
+mailing_list_sing_up_form: https://cdn.forms-content-1.sg-form.com/7aae09d9-22bc-11ee-af5f-72630d7bdcc8
+
 # Build settings
 plugins:
   - jekyll-feed

@@ -1,2 +1,2 @@
-web: bundle exec jekyll serve
+web: bundle exec jekyll serve --open-url --host=0.0.0.0
 css: yarn run dev
