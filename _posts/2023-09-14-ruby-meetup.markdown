@@ -16,7 +16,7 @@ Hubo juegos, comida, birra y como no podían faltar, unas tremendas charlas 🔥
 1. Charlas
   - [DragonRuby GTK - Gamedev with Ruby](#dragon-ruby)
   - [De Pending a completed](#pending-a-completed)
-2. [Imagenes del evento](#la-comunidad)
+2. [Imagenes del evento](#la-comunidad-)
 3. [Agradecimientos](#agradecimientos)
 
 
@@ -27,7 +27,7 @@ En esta charla, Fer nos presentó DragonRuby, un engine de Ruby diseñado para p
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Jy_3fOmsuA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full"></iframe>
 
 ## Slides
-- TBD
+- [lprb-dr-talk](https://github.com/F-3r/lprb-dr-talk/)
 
 ## Speaker
 ### Fernando Martínez
@@ -43,11 +43,13 @@ En "De Pending a Completed", Bruno invita a pensar out-of-the-box y nos cuenta s
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Fr-7M76JTow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="w-full"></iframe>
 
 ## Slides
-- TBD
+- [Link](https://drive.google.com/file/d/1ulGWa9elcSP7YxecHmNA9v9I2u2o2VaH/view?usp=sharing)
 
 ## Speaker
 ### Bruno Costanzo
-- TBD
+- IG: @bru.npc
+- Twitter: @brunocostanzo_
+- Email: dev.bcostanzo@gmail.com
 
 # La comunidad ❤️
 Esta edición merece una mención especial a la gente de [Snappler](https://www.snappler.com/) que nos abrieron la puerta de su casa ❤️.
